@@ -5,7 +5,7 @@ export default function Intro() {
         <h1>Hey,</h1>
         <h1>I'm Hardik</h1>
       </div>
-      <div className="mt-5 ml-2 text-4xl">
+      <div className="mt-5 ml-2 text-4xl text-white">
         <h2>I build apps</h2>
       </div>
     </>
