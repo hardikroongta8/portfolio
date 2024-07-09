@@ -4,7 +4,7 @@ import Intro from "./Intro";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 
-function App() {
+export default function App() {
   return (
     <div className="bg-black h-screen px-10">
       <Navbar />
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
