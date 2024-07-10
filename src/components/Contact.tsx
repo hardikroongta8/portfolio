@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div className="h-screen md:px-32 px-10 pt-20 flex flex-col">
       <div>
-        <div className="text-white mb-5 w-96 text-wrap">
+        <div className="text-white mb-5 w-72 md:w-2/5 text-wrap">
           <h1 className="text-2xl mb-2 font-nunito font-semibold">
             Let's connect!
           </h1>
