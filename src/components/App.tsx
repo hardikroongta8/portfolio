@@ -6,7 +6,7 @@ import Projects from "./Projects";
 
 export default function App() {
   return (
-    <div className="bg-black h-screen px-10">
+    <div>
       <Navbar />
       <Intro />
       <About />
