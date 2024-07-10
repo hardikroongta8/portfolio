@@ -5,8 +5,8 @@ import igLogo from "../assets/images/ig_logo.png";
 
 export default function Socials() {
   return (
-    <div className="grid gap-2 md:gap-8 justify-center">
-      <div className="text-white text-xl text-center md:text-left md:text-4xl">
+    <div className="grid gap-4 md:gap-8 justify-center">
+      <div className="text-white text-2xl text-center md:text-left md:text-4xl">
         <h1>Let's connect!</h1>
       </div>
       <div>
@@ -15,7 +15,7 @@ export default function Socials() {
             <a href="https://github.com/hardikroongta8">
               <img
                 src={githubLogo}
-                className="h-5 md:h-10  hover:scale-125 transition duration-75"
+                className="h-6 md:h-10  hover:scale-125 transition duration-75"
               />
             </a>
           </li>
@@ -23,7 +23,7 @@ export default function Socials() {
             <a href="https://www.linkedin.com/in/hardikroongta8">
               <img
                 src={linkedInLogo}
-                className="h-5 md:h-10 hover:scale-125 transition duration-75"
+                className="h-6 md:h-10 hover:scale-125 transition duration-75"
               />
             </a>
           </li>
@@ -31,7 +31,7 @@ export default function Socials() {
             <a href="https://x.com/hardikroongta8">
               <img
                 src={xLogo}
-                className="h-5 md:h-10 hover:scale-125 transition duration-75"
+                className="h-6 md:h-10 hover:scale-125 transition duration-75"
               />
             </a>
           </li>
@@ -39,7 +39,7 @@ export default function Socials() {
             <a href="https://www.instagram.com/hardikroongta8">
               <img
                 src={igLogo}
-                className="h-5 md:h-10 hover:scale-125 transition duration-75"
+                className="h-6 md:h-10 hover:scale-125 transition duration-75"
               />
             </a>
           </li>
