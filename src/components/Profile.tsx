@@ -24,7 +24,7 @@ export default function Profile() {
           </p>
         </div>
         <div className="text-2xl mt-5 font-semibold font-nunito text-white underline">
-          <a href="/public/resume.pdf">
+          <a href="/resume.pdf">
             <p>Get my resume</p>
           </a>
         </div>
