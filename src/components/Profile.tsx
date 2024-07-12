@@ -1,6 +1,13 @@
+import { useRef } from "react";
+
 export default function Profile() {
+  const profileRef = useRef(null);
   return (
-    <div className="px-10 md:px-32 grid items-center h-screen">
+    <div
+      id="profile"
+      ref={profileRef}
+      className="px-10 md:px-32 grid items-center h-screen"
+    >
       <div>
         <div className="text-3xl font-semibold text-white font-nunito">
           <h1>Hey,</h1>

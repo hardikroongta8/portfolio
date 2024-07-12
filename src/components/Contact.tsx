@@ -3,10 +3,17 @@ import githubLogo from "../assets/images/github_logo.png";
 import linkedInLogo from "../assets/images/linkedin_logo.png";
 import xLogo from "../assets/images/x_logo.png";
 import igLogo from "../assets/images/ig_logo.png";
+import { useRef } from "react";
 
 export default function Contact() {
+  const contactRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="h-screen md:px-32 px-10 pt-20 flex flex-col">
+    <div
+      id="contact"
+      ref={contactRef}
+      className="h-screen md:px-32 px-10 pt-20 flex flex-col"
+    >
       <div>
         <div className="text-white mb-5 w-72 md:w-2/5 text-wrap">
           <h1 className="text-2xl mb-2 font-nunito font-semibold">
