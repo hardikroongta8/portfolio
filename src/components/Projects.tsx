@@ -15,7 +15,7 @@ export default function Projects() {
         title="Projects"
         description="Here are a few projects I've worked on, including some developed for college that are actively used by students on campus."
       />
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-7 mt-10">
+      <div className="w-full flex flex-col items-center md:items-stretch md:grid md:grid-cols-3 gap-7 mt-10">
         {projects.map((e) => (
           <ProjectTile projectInfo={e} key={e.id} />
         ))}
