@@ -3,7 +3,7 @@ import Profile from "./Profile";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 
-export default function App() {
+export default function Home() {
   return (
     <div className="md:snap-y md:relative md:transition-all md:touch-none md:scroll-smooth no-scrollbar md:snap-mandatory md:overflow-y-scroll h-screen">
       <Navbar />

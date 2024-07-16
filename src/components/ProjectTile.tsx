@@ -1,26 +1,31 @@
-type projectInfo = {
-  imageUrl: string;
-  title: string;
-  description: string;
+import { ProjectInfo } from "../data/projects";
+
+type ProjectProps = {
+  projectInfo: ProjectInfo;
 };
 
-export default function ProjectTile(props: projectInfo) {
+export default function ProjectTile(props: ProjectProps) {
+  const { projectInfo } = props;
   return (
     <div className="flex flex-col justify-between mb-10 md:mb-0">
       <div className=" w-full font-nunito border-gray-300">
         <div className="bg-slate-400 rounded mb-4">
-          <img src={props.imageUrl} className="h-48" />
+          <img src={projectInfo.imageUrl} className="h-48" />
         </div>
         <div className="px-1 mt-2">
           <div className="flex justify-between">
-            <h2 className="text-xl text-white mb-2">{props.title}</h2>
+            <h2 className="text-xl text-white mb-2">{projectInfo.title}</h2>
           </div>
           <p className="text-base font-montserrat text-gray-400">
-            {props.description}
+            {projectInfo.description}
           </p>
         </div>
       </div>
-      <h2 className="font-montserrat text-gray-200 mt-5">PROJECT DETAILS</h2>
+      <a href={`/project/${projectInfo.path}`}>
+        <h2 className="font-montserrat text-gray-200 px-1 mt-5">
+          PROJECT DETAILS
+        </h2>
+      </a>
     </div>
   );
 }
