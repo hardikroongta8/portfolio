@@ -97,7 +97,7 @@ export const projects: Array<ProjectInfo> = [
       },
       {
         title: "App Repo",
-        url: "https://github.com/swciitg/khokha_entry_flutter",
+        url: "https://github.com/swciitg/khokha_entry_onestop",
       },
     ],
     appLinks: [
