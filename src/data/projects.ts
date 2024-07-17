@@ -23,7 +23,7 @@ export const projects: Array<ProjectInfo> = [
     path: "collegecupid",
     title: "CollegeCupid IITG",
     summary: "A fully encrypted matchmaking app for campus students.",
-    description: "A fully encrypted matchmaking app for campus students.",
+    description: "A completely encrypted matchmaking app designed for campus students.\nIt employs the Diffie-Hellman Key Exchange algorithm to maintain privacy.\nUsers can confidentially declare their crushes, and on Valentine's Day, the server identifies the matches.\nThese declarations are encrypted, and a matches are found by detecting duplicate shared secrets.",
     imageUrl: image,
     githubLinks: [
       {

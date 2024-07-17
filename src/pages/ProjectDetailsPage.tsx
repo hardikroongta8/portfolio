@@ -27,9 +27,11 @@ export default function ProjectDetailsPage() {
               className="w-full object-cover aspect-video mx-auto md:mx-0 mb-5 lg:mb-0 rounded-lg"
               src={projectDetails.imageUrl}
             />
-            <div className="flex flex-col w-full lg:w-fit md:justify-between sm:text-lg lg:ml-10">
+            <div className="flex flex-col w-full lg:w-fit md:justify-between sm:text-md lg:ml-10">
               {projectDetails.description.split("\n").map((e) => (
-                <p className="text-md pb-2">{e}</p>
+                <p className="pb-2 font-montserrat text-gray-200" key={e}>
+                  {e}
+                </p>
               ))}
               <div className="grid grid-cols-2 gap-x-20 gap-y-5 sm:gap-0 sm:flex sm:justify-between mt-10 font-nunito font-semibold text-gray-500">
                 <LinksList list={projectDetails.githubLinks} title="GitHub" />
