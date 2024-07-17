@@ -1,9 +1,9 @@
-import Contact from "./Contact";
-import Profile from "./Profile";
-import Navbar from "./Navbar";
-import Projects from "./Projects";
+import Contact from "../components/Contact";
+import Profile from "../components/Profile";
+import Navbar from "../components/Navbar";
+import Projects from "../components/Projects";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="md:snap-y md:relative md:transition-all md:touch-none md:scroll-smooth no-scrollbar md:snap-mandatory md:overflow-y-scroll h-screen">
       <Navbar />
