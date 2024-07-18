@@ -1,7 +1,7 @@
 import Contact from "../components/Contact";
 import Profile from "../components/Profile";
 import Navbar from "../components/Navbar";
-import Projects from "../components/Projects";
+import ProjectsList from "../components/ProjectsList";
 
 export default function HomePage() {
   return (
@@ -12,7 +12,7 @@ export default function HomePage() {
       </div>
       <div className="md:h-screen" />
       <div className="md:snap-center" id="p2">
-        <Projects />
+        <ProjectsList />
       </div>
       <div className="md:h-screen" />
       <div className="md:snap-center" id="p3">

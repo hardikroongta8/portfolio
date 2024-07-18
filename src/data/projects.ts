@@ -117,4 +117,91 @@ export const projects: Array<ProjectInfo> = [
       },
     ],
   },
+  {
+    id: 4,
+    title: "MyChats",
+    path: "mychats",
+    summary: "A device that logs student entries and exits at campus gates by scanning QR present on the mobile app.",
+    description:
+      "This is an Arduino based device, which scans the QR from the student's phone, and logs their entries and exits at campus gates.\nA network request is made by the device, containing the Student's ID and other relevant information.\nThe App on the student's phone connects to the server using a WebSocket protocol, for receiving scan results.",
+    imageUrl: image,
+    githubLinks: [
+      {
+        title: "Server Repo",
+        url: "https://github.com/hardikroongta8/mychats_backend",
+      },
+      {
+        title: "App Repo",
+        url: "https://github.com/hardikroongta8/mychats_client",
+      },
+    ],
+    appLinks: [],
+    otherLinks: [
+      {
+        title: "Screenshots",
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "GateLog IITG",
+    path: "abcdef",
+    summary: "A device that logs student entries and exits at campus gates by scanning QR present on the mobile app.",
+    description:
+      "This is an Arduino based device, which scans the QR from the student's phone, and logs their entries and exits at campus gates.\nA network request is made by the device, containing the Student's ID and other relevant information.\nThe App on the student's phone connects to the server using a WebSocket protocol, for receiving scan results.",
+    imageUrl: image,
+    githubLinks: [
+      {
+        title: "Server Repo",
+        url: "https://github.com/swciitg/khokha_entry_backend",
+      },
+      {
+        title: "App Repo",
+        url: "https://github.com/swciitg/khokha_entry_onestop",
+      },
+    ],
+    appLinks: [
+      {
+        title: "Play Store",
+        url: "https://play.google.com/store/apps/details?id=com.swciitg.onestop2",
+      },
+      {
+        title: "App Store",
+        url: "https://apps.apple.com/in/app/onestop-iitg/id1642792642",
+      },
+    ],
+    otherLinks: [
+      {
+        title: "Demo Video",
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "MyChats",
+    path: "wxy",
+    summary: "A device that logs student entries and exits at campus gates by scanning QR present on the mobile app.",
+    description:
+      "This is an Arduino based device, which scans the QR from the student's phone, and logs their entries and exits at campus gates.\nA network request is made by the device, containing the Student's ID and other relevant information.\nThe App on the student's phone connects to the server using a WebSocket protocol, for receiving scan results.",
+    imageUrl: image,
+    githubLinks: [
+      {
+        title: "Server Repo",
+        url: "https://github.com/hardikroongta8/mychats_backend",
+      },
+      {
+        title: "App Repo",
+        url: "https://github.com/hardikroongta8/mychats_client",
+      },
+    ],
+    appLinks: [],
+    otherLinks: [
+      {
+        title: "Screenshots",
+        url: "",
+      },
+    ],
+  }
 ];
