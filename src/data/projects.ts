@@ -121,9 +121,9 @@ export const projects: Array<ProjectInfo> = [
     id: 4,
     title: "MyChats",
     path: "mychats",
-    summary: "A device that logs student entries and exits at campus gates by scanning QR present on the mobile app.",
+    summary: "A WhatsApp like realtime chatting application.",
     description:
-      "This is an Arduino based device, which scans the QR from the student's phone, and logs their entries and exits at campus gates.\nA network request is made by the device, containing the Student's ID and other relevant information.\nThe App on the student's phone connects to the server using a WebSocket protocol, for receiving scan results.",
+      "It's a WhatsApp-like chat application that supports real-time communication using WebSockets when both users are online.\nMessages are stored locally on the device, and if the recipient is offline, they are temporarily stored in a database. Once the recipient receives the message, it is deleted from the database.",
     imageUrl: image,
     githubLinks: [
       {
@@ -139,26 +139,22 @@ export const projects: Array<ProjectInfo> = [
     otherLinks: [
       {
         title: "Screenshots",
-        url: "",
+        url: "https://drive.google.com/drive/folders/1tAkyJa958yoLpkKETplrXkoLEWrGRT9L?usp=sharing",
       },
     ],
   },
   {
     id: 5,
-    title: "GateLog IITG",
-    path: "abcdef",
-    summary: "A device that logs student entries and exits at campus gates by scanning QR present on the mobile app.",
+    title: "HotShot",
+    path: "hotshot",
+    summary: "A food delivery/takeout app for IITG Campus students.",
     description:
-      "This is an Arduino based device, which scans the QR from the student's phone, and logs their entries and exits at campus gates.\nA network request is made by the device, containing the Student's ID and other relevant information.\nThe App on the student's phone connects to the server using a WebSocket protocol, for receiving scan results.",
+      "A mobile app that allows students to order food for takeout from campus eatries (e.g. Canteens and Food Court).",
     imageUrl: image,
     githubLinks: [
       {
-        title: "Server Repo",
-        url: "https://github.com/swciitg/khokha_entry_backend",
-      },
-      {
-        title: "App Repo",
-        url: "https://github.com/swciitg/khokha_entry_onestop",
+        title: "App & Server Repo",
+        url: "https://github.com/ptayal76/hotshot",
       },
     ],
     appLinks: [
@@ -171,37 +167,6 @@ export const projects: Array<ProjectInfo> = [
         url: "https://apps.apple.com/in/app/onestop-iitg/id1642792642",
       },
     ],
-    otherLinks: [
-      {
-        title: "Demo Video",
-        url: "",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "MyChats",
-    path: "wxy",
-    summary: "A device that logs student entries and exits at campus gates by scanning QR present on the mobile app.",
-    description:
-      "This is an Arduino based device, which scans the QR from the student's phone, and logs their entries and exits at campus gates.\nA network request is made by the device, containing the Student's ID and other relevant information.\nThe App on the student's phone connects to the server using a WebSocket protocol, for receiving scan results.",
-    imageUrl: image,
-    githubLinks: [
-      {
-        title: "Server Repo",
-        url: "https://github.com/hardikroongta8/mychats_backend",
-      },
-      {
-        title: "App Repo",
-        url: "https://github.com/hardikroongta8/mychats_client",
-      },
-    ],
-    appLinks: [],
-    otherLinks: [
-      {
-        title: "Screenshots",
-        url: "",
-      },
-    ],
+    otherLinks: [],
   }
 ];

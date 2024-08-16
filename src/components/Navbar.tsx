@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import menuIcon from "../assets/images/menu_icon.png";
-import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -17,20 +16,12 @@ export default function Navbar() {
         setIsOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
 
-    const hash = location.hash;
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [location]);
+  });
 
   return (
     <div
@@ -40,13 +31,13 @@ export default function Navbar() {
       <nav>
         <ul className="md:flex hidden justify-end gap-16">
           <li className="hover:text-white">
-            <a href="#profile">Profile</a>
+            <Link to="/profile">Profile</Link>
           </li>
           <li className="hover:text-white">
-            <a href="#projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li className="hover:text-white">
-            <a href="#contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <div className="md:hidden flex justify-end">
@@ -56,17 +47,17 @@ export default function Navbar() {
         </div>
       </nav>
       {isOpen && (
-        <div className="origin-top-right absolute right-8 mt-2 w-40 rounded-md shadow-lg bg-zinc-900">
+        <div className="origin-top-right absolute z-10 right-8 mt-2 w-40 rounded-md shadow-lg bg-zinc-900">
           <div className="py-1">
-            <a href="#profile" className="block px-4 py-2 text-sm">
+            <Link to="/profile" className="block px-4 py-2 text-sm">
               Profile
-            </a>
-            <a href="#projects" className="block px-4 py-2 text-sm">
+            </Link>
+            <Link to="/projects" className="block px-4 py-2 text-sm">
               Projects
-            </a>
-            <a href="#contact" className="block px-4 py-2 text-sm">
+            </Link>
+            <Link to="/contact" className="block px-4 py-2 text-sm">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}

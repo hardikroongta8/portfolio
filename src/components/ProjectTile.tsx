@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ProjectInfo } from "../data/projects";
 
 type ProjectProps = {
@@ -24,11 +25,11 @@ export default function ProjectTile(props: ProjectProps) {
           </p>
         </div>
       </div>
-      <a href={`/project/${projectInfo.path}`}>
+      <Link to={`/project/${projectInfo.path}`}>
         <h2 className="font-montserrat text-gray-200 px-1 mt-5 hover:underline">
           PROJECT DETAILS
         </h2>
-      </a>
+      </Link>
     </div>
   );
 }
