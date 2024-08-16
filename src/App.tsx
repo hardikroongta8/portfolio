@@ -12,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/">
           <Route element={<HomePage />}>
+            <Route index element={<Navigate to={"/profile"} />} />
             <Route path="profile" element={<Profile />} />
             <Route path="projects" element={<ProjectsList />} />
             <Route path="contact" element={<Contact />} />
